@@ -3,6 +3,7 @@ package Employee;
 public class EmployeeWage {
     double standardWageRate = 20;
     int standardHours = 8;
+    int PartTimeWorkingHours = 8;
     double totalWage;
     public void calculateAttendance(){
         int IS_FULL_TIME = 1;
@@ -13,6 +14,13 @@ public class EmployeeWage {
         }
 
         else
+
             System.out.println("Employee is absent & wages is" + totalWage);
+    }
+    public void PartTimeEmployeeWages()
+    {
+
+        totalWage = (standardWageRate * PartTimeWorkingHours);
+        System.out.println("Your Part Time wage is: " + totalWage);
     }
 }
